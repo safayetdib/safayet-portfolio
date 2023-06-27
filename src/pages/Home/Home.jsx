@@ -1,3 +1,4 @@
+import About from './About/About';
 import Banner from './Banner/Banner';
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
 			<Banner />
 
 			{/* about */}
-			<section></section>
+			<About />
 
 			{/* projects */}
 			<section></section>
