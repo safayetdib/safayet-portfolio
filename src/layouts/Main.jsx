@@ -4,7 +4,7 @@ import Footer from '../pages/Shared/Footer/Footer';
 
 const Main = () => {
 	return (
-		<div>
+		<div className="font-mono min-h-screen bg-gray-100 tracking-widest">
 			<Header />
 			<Outlet />
 			<Footer />
