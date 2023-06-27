@@ -1,8 +1,10 @@
+import Banner from './Banner/Banner';
+
 const Home = () => {
 	return (
 		<main>
 			{/* banner */}
-			<section></section>
+			<Banner />
 
 			{/* about */}
 			<section></section>
