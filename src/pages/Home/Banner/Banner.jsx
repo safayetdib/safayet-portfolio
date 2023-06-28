@@ -2,7 +2,9 @@ import { Fade, Slide } from 'react-awesome-reveal';
 
 const Banner = () => {
 	return (
-		<section className="bg-gray-200">
+		<section
+			id="home"
+			className="bg-gray-200 bg-[url('/src/assets/bg.svg')] pt-[72px]">
 			<div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-screen-xl flex-col items-center justify-center gap-8 divide-black px-4 py-4 uppercase md:flex-row md:divide-x-4">
 				<div>
 					<Fade>
