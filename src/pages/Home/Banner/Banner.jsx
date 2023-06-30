@@ -9,7 +9,7 @@ const Banner = () => {
 				<div>
 					<Fade>
 						<img
-							src="/src/assets/safayet.jpg"
+							src="./src/assets/safayet.jpg"
 							alt="Safayet Photo"
 							className="h-40 w-40 rounded-full object-cover shadow ring-4 ring-black md:h-60 md:w-60"
 						/>
