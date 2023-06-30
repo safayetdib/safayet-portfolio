@@ -1,15 +1,17 @@
-import { Fade, Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
 	return (
 		<section
 			id="about"
-			className="mx-auto min-h-[calc(100vh-72px)] max-w-screen-xl px-4 pt-[72px]">
+			className="mx-auto min-h-[calc(100vh-72px)] max-w-screen-xl px-4 pb-20 pt-[72px]">
 			{/* header */}
 			<div className="mx-auto mt-4 max-w-4xl space-y-4 text-center ">
-				<h2 className="text-3xl font-extrabold md:text-5xl">About Me</h2>
+				<h2 className="text-3xl font-extrabold uppercase md:text-5xl">
+					About Me
+				</h2>
 				<div className="mx-auto h-2 w-10 rounded-full bg-black"></div>
-				<p>
+				<p className="text-sm sm:text-base md:text-lg">
 					Here you will find more information about me, what I do, and my
 					current skills mostly in terms of programming and technology
 				</p>
@@ -21,7 +23,7 @@ const About = () => {
 				<div className="space-y-6 overflow-hidden md:w-1/2">
 					<Fade>
 						<h4 className="text-2xl font-bold">Get to know me!</h4>
-						<p>
+						<p className="text-sm sm:text-base md:text-lg">
 							I'm a Frontend Web Developer building the Front-end of Websites
 							and Web Applications that leads to the success of the overall
 							product. Check out some of my work in the Projects section. <br />
