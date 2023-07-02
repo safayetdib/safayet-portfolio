@@ -3,10 +3,10 @@ import { HiBars3BottomRight } from 'react-icons/hi2';
 import { IoClose } from 'react-icons/io5';
 
 const navMenus = [
-	// {
-	// 	name: 'Home',
-	// 	path: '#home',
-	// },
+	{
+		name: 'Home',
+		path: '#home',
+	},
 	{
 		name: 'About',
 		path: '#about',

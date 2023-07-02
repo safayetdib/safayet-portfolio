@@ -1,4 +1,6 @@
 import { Fade, Slide } from 'react-awesome-reveal';
+import { FaFileDownload } from 'react-icons/fa';
+import safayetResume from '../../../assets/Safayet Frontend Resume.pdf';
 
 const Banner = () => {
 	return (
@@ -28,12 +30,16 @@ const Banner = () => {
 							product
 						</p>
 
-						<button className="border-2 border-black px-4 py-2 font-bold uppercase tracking-widest transition hover:bg-black hover:text-white md:text-xl">
-							Download Resume
-						</button>
+						<a
+							href={safayetResume}
+							download="Safayet_Resume.pdf"
+							title="Download Resume of Safayet"
+							className="flex w-fit cursor-pointer items-center gap-3 border-2 border-black px-4 py-2 font-bold uppercase tracking-widest transition hover:bg-black hover:text-white md:text-lg">
+							<FaFileDownload className="text-xl" /> Download Resume
+						</a>
 					</Slide>
 				</div>
-			</div>
+			</div>{' '}
 		</section>
 	);
 };

@@ -1,6 +1,8 @@
 const Contact = () => {
 	return (
-		<section id="contact" className="px-4 pb-20 pt-[72px]">
+		<section
+			id="contact"
+			className="mx-auto min-h-[calc(100vh-72px)] max-w-screen-xl px-4 pb-20 pt-[72px]">
 			<div className="mx-auto mt-4 max-w-4xl space-y-4 text-center ">
 				<h2 className="text-3xl font-extrabold uppercase md:text-5xl">
 					Contact
@@ -13,8 +15,8 @@ const Contact = () => {
 			</div>
 
 			{/* contact form */}
-			<div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-screen-xl items-center justify-center p-10">
-				<form className="w-full max-w-2xl space-y-4 rounded bg-white p-10 shadow-lg">
+			<div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-screen-xl items-center justify-center py-10">
+				<form className="w-full max-w-2xl space-y-4 rounded-lg bg-white px-4 py-6 shadow-lg md:p-10">
 					{/* name */}
 					<div>
 						<label htmlFor="name" className="text-gray-500">
@@ -24,7 +26,7 @@ const Contact = () => {
 							type="text"
 							name="name"
 							placeholder="Enter You Name"
-							className="block w-full rounded-lg border p-3"
+							className="block w-full rounded-lg border bg-gray-100 p-3"
 						/>
 					</div>
 					{/* email */}
@@ -37,7 +39,7 @@ const Contact = () => {
 							name="email"
 							required
 							placeholder="Enter You Email"
-							className="block w-full rounded-lg border p-3"
+							className="block w-full rounded-lg border bg-gray-100 p-3"
 						/>
 					</div>
 					{/* message */}
@@ -51,9 +53,14 @@ const Contact = () => {
 							required
 							cols="30"
 							rows="10"
-							className="block w-full rounded-lg border p-3"></textarea>
+							className="block w-full rounded-lg border bg-gray-100 p-3"></textarea>
 					</div>
 					{/* button */}
+					<div className="w-full text-right">
+						<button className="ml-auto mt-5 rounded-md bg-black px-16 py-2 text-xl uppercase tracking-widest text-white transition duration-200 hover:scale-[102%]">
+							Submit
+						</button>
+					</div>
 				</form>
 			</div>
 		</section>

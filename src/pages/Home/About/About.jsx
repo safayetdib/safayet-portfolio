@@ -1,4 +1,46 @@
 import { Fade } from 'react-awesome-reveal';
+import { FaReact, FaBootstrap, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import {
+	BiLogoJavascript,
+	BiLogoTailwindCss,
+	BiLogoMongodb,
+} from 'react-icons/bi';
+import { SiExpress } from 'react-icons/si';
+
+const skillsData = [
+	{
+		icon: <FaReact />,
+		name: 'React',
+	},
+	{
+		icon: <BiLogoJavascript />,
+		name: 'JavaScript',
+	},
+	{
+		icon: <BiLogoTailwindCss />,
+		name: 'Tailwind CSS',
+	},
+	{
+		icon: <FaBootstrap />,
+		name: 'Bootstrap',
+	},
+	{
+		icon: <FaHtml5 />,
+		name: 'HTML',
+	},
+	{
+		icon: <FaCss3Alt />,
+		name: 'CSS',
+	},
+	{
+		icon: <BiLogoMongodb />,
+		name: 'MongoDB',
+	},
+	{
+		icon: <SiExpress />,
+		name: 'Express',
+	},
+];
 
 const About = () => {
 	return (
@@ -50,36 +92,13 @@ const About = () => {
 					<h4 className="text-2xl font-bold">My Skills</h4>
 
 					<div className="mt-8 flex flex-wrap gap-4">
-						<Fade>
-							<div className="bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
-								HTML
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
-								HTML
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
-								HTML
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
-								HTML
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
-								HTML
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
-								HTML
-							</div>
-						</Fade>
+						{skillsData.map((item, index) => (
+							<Fade key={index}>
+								<div className="flex items-center gap-2 bg-black px-4 py-2 font-bold uppercase tracking-widest text-white md:text-xl">
+									{item.icon} {item.name}
+								</div>
+							</Fade>
+						))}
 					</div>
 				</div>
 			</div>

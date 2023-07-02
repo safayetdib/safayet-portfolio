@@ -1,5 +1,13 @@
 import Project from '../../../components/Project/Project';
 
+const projectData = [
+	{
+		name: `The Jedi's Trunk`,
+		banner_img: 'url',
+		screenshots: ['url', 'url', 'url'],
+	},
+];
+
 const Projects = () => {
 	return (
 		<section id="projects" className="bg-gray-50 pb-20 pt-[72px]">
