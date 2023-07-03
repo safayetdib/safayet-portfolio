@@ -1,12 +1,5 @@
 import Project from '../../../components/Project/Project';
-
-const projectData = [
-	{
-		name: `The Jedi's Trunk`,
-		banner_img: 'url',
-		screenshots: ['url', 'url', 'url'],
-	},
-];
+import ProjectsData from '../../../../public/data/ProjectsData';
 
 const Projects = () => {
 	return (
@@ -27,10 +20,9 @@ const Projects = () => {
 				{/* projects */}
 				<div>
 					{/* project */}
-					<Project />
-					<Project />
-					<Project />
-					<Project />
+					{ProjectsData.map((data, index) => (
+						<Project key={index} data={data} />
+					))}
 				</div>
 			</div>
 		</section>
