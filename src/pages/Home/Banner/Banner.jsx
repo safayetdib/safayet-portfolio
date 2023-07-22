@@ -1,3 +1,4 @@
+import bgImg from '../../../../public/assets/bg.svg';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { FaFileDownload } from 'react-icons/fa';
 import safayetResume from '/assets/safayetResume.pdf';
@@ -6,12 +7,12 @@ const Banner = () => {
 	return (
 		<section
 			id="home"
-			className="bg-gray-200 bg-[url('/src/assets/bg.svg')] pt-[72px]">
+			className={`bg-gray-200 bg-[url('/assets/bg.svg')] pt-[72px]`}>
 			<div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-screen-xl flex-col items-center justify-center gap-8 divide-black px-4 py-4 uppercase md:flex-row md:divide-x-4">
 				<div>
 					<Fade>
 						<img
-							src="/assets/safayet.jpg"
+							src={'/assets/safayet.jpg'}
 							alt="Safayet Photo"
 							className="h-40 w-40 rounded-full object-cover shadow ring-4 ring-black md:h-60 md:w-60"
 						/>
@@ -34,7 +35,7 @@ const Banner = () => {
 							href={safayetResume}
 							download="Safayet_Resume.pdf"
 							title="Download Resume of Safayet"
-							className="flex w-fit cursor-pointer items-center gap-3 border-2 border-black px-4 py-2 font-bold uppercase tracking-widest transition hover:bg-black hover:text-white md:text-lg">
+							className="mx-auto flex w-fit cursor-pointer items-center gap-3 border-2 border-black px-4 py-2 font-bold uppercase tracking-widest transition hover:bg-black hover:text-white md:mx-0 md:text-lg">
 							<FaFileDownload className="text-xl" /> Download Resume
 						</a>
 					</Slide>
