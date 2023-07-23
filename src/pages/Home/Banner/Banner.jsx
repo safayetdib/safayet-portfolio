@@ -1,4 +1,3 @@
-import bgImg from '../../../../public/assets/bg.svg';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { FaFileDownload } from 'react-icons/fa';
 import safayetResume from '/assets/safayetResume.pdf';
