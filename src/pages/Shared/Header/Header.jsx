@@ -25,7 +25,7 @@ const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
-		<header className="fixed left-0 right-0 top-0 z-30 bg-gray-900 px-4 py-4 text-gray-100">
+		<header className="fixed left-0 right-0 top-0 z-30 bg-black px-4 py-4 text-gray-100">
 			<div className=" mx-auto flex  max-w-screen-xl items-center justify-between uppercase">
 				<a href="#home" className="tracking-[8px]">
 					<h2 className="font-monofett text-3xl sm:text-4xl">Safayet</h2>
@@ -53,7 +53,7 @@ const Header = () => {
 				</button>
 
 				{isNavOpen && (
-					<nav className="absolute right-0 top-0 z-40 mr-2 mt-4 w-60 rounded border border-gray-600 bg-gray-900 px-4 pb-8 pt-12 text-center shadow-lg md:hidden">
+					<nav className="absolute right-0 top-0 z-40 mr-2 mt-4 w-60 rounded border border-gray-600 bg-black px-4 pb-8 pt-12 text-center shadow-lg md:hidden">
 						<ul className="flex flex-col items-center justify-center gap-8 text-xl font-semibold">
 							{navMenus.map((item, index) => (
 								<li key={index}>

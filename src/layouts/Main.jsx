@@ -21,16 +21,16 @@ const Main = () => {
 	};
 
 	return (
-		<div className="min-h-screen bg-gray-100 font-mono tracking-widest">
+		<div className="min-h-screen bg-gray-950 font-mono tracking-widest text-gray-100">
 			<Header />
 			<Outlet />
 			<Footer />
 
-			<button
+			{/* <button
 				onClick={handleToggle}
 				className="fixed bottom-0 right-0 m-4 rounded-full bg-gray-800 px-4 py-2 text-white opacity-70 transition duration-300 hover:opacity-100">
 				{isDarkMode ? <FaSun /> : <FaMoon />}
-			</button>
+			</button> */}
 
 			<Toaster />
 		</div>
